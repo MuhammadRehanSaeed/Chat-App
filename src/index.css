@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 17% 97%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 180 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 15% 15%;
+
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 180 85% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 180 85% 45%;
+
+    --radius: 0.75rem;
+
+    --chat-bubble-sent: 180 85% 45%;
+    --chat-bubble-received: 220 14% 92%;
+    --chat-bubble-sent-foreground: 0 0% 100%;
+    --chat-bubble-received-foreground: 220 15% 15%;
+    
+    --sidebar-background: 220 15% 15%;
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 180 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 180 85% 70%;
+    --sidebar-border: 220 15% 22%;
+    --sidebar-ring: 180 85% 45%;
+
+    --online-status: 142 71% 45%;
+    --offline-status: 220 10% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 220 10% 95%;
+
+    --card: 220 18% 14%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 220 18% 14%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 180 85% 55%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 95%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 180 85% 55%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 220 10% 95%;
+
+    --border: 220 15% 22%;
+    --input: 220 15% 20%;
+    --ring: 180 85% 55%;
+
+    --chat-bubble-sent: 180 85% 45%;
+    --chat-bubble-received: 220 15% 18%;
+    --chat-bubble-sent-foreground: 0 0% 100%;
+    --chat-bubble-received-foreground: 220 10% 95%;
+
+    --sidebar-background: 220 18% 12%;
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 180 85% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 180 85% 70%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 180 85% 55%;
+
+    --online-status: 142 71% 55%;
+    --offline-status: 220 10% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
